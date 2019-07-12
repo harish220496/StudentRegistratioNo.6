@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 6</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		.outer{
+			width: 80%;
+			color: white;
+			margin: auto;
+		}
+		.header {
+		    width: 98%;
+		    height: 53px;
+		    background-image:linear-gradient(grey,blue);
+		    margin-left: 1%;
+		    font-size: 35px;
+		    text-align: center;
+		    font-weight: bold;
+		    margin-bottom: 5px;
+		    border-color: white;
+		    font-family:cursive;
+}
+        .inner-block{
+        	width: 98%;
+        	margin-left: 1%;
+        	border: 1px solid white;
+        	background-image: url("https://www.boell.de/sites/default/files/php3fhIyR");
+        	background-size: 100% 100%;
+        	padding-bottom: 4px;
+        	opacity: 0.8;
+        }
+        .small-block{
+        	width: 98%;
+        	margin-left: 1%;
+        	height: 160px;
+        	margin-top: 1%;
+        	border: 1px solid white;
+        	position: relative;
+        	opacity: 1;
+        	color: white;
+        	
+        }
+       .top-border-block {
+		    width: 140px;
+		    height: 40px;
+		    border: 1px solid black;
+		    position: absolute;
+		    top: -6px;
+		    left: 31px;
+		    z-index: 5;
+		    border-color: white;
+		    font-weight: bold;
+		    background-color:#57294E;	
+		    font-family:cursive;
+		    font-size: 15px;    
+}
+		
+    .column1 {
+		    position: relative;
+		    left:25%;
+		    color: black;
+		    font-weight: bold;
+		    
+}
+
+	</style>
+
+</head>
+<body>
+	<form>
+	<div class="outer">
+		<div class="header">
+
+			<span>Student Registration</span>
+		</div>
+		<div class="inner-block">
+			<div class="small-block">
+				<div class="top-border-block">Account details</div>
+				<div class="column1" style="top: 28%;">
+					<label for="userid" style="margin-right: 1%;">User ID:</label>
+					<input type="text" name="userid">
+					
+				</div>
+				<div class="column1" style="top:33%;">
+					<label for="Password">Password:</label>
+					<input type="Password" name="Password">
+					
+				</div>
+				<div class="column1" style="top:38%;">
+					<label for="actype">Account type:</label>
+					<select name="actype">
+						<option>Savings</option>
+						<option>Personal</option>
+						<option>Business</option>
+					</select>
+					
+				</div>
+				<div class="column1" style="top: 42%;">
+					<label for="mailid">Mail Id:</label>
+					<input type="text" name="mailid" style="position: relative;left: 1.5%;">
+				</div>
+			</div>
+			<div class="small-block">
+
+				<div class="top-border-block">Personal details</div>
+				
+				<div class="column1" style="top: 28%;">
+					<label for="username" style="margin-right: 1%;">Username:</label>
+					<input type="text" name="username">
+					
+				</div>
+				<div class="column1" style="top:33%;">
+					<label for="Age">Age:</label>
+					<input type="text" name="Age" style="position: relative;left: 40px;">
+					
+				</div>
+				<div class="column1" style="top:38%;">
+					Gender:
+					<label for="gender">Male:</label>
+					<input type="radio" name="gender">
+					<label for="female">Female:</label>
+					<input type="radio" name="gender">
+					<label for="others">Others:</label>
+					<input type="radio" name="gender">
+					
+				</div>
+			</div>
+			<div class="small-block">
+
+				<div class="top-border-block">Course details</div>
+				<div class="column1" style="top: 28%;">
+					<label for="course">Course opted for:</label>
+					<select name="course">
+						<option>Java</option>
+						<option>.net</option>
+						<option>php</option>
+					</select>
+				</div>	
+					<div class="column1" style="top: 34%">
+						<label name="Lang">Language:</label>
+						<span>English</span>
+						<input type="checkbox" name="Lang"/>
+						<span>Hindi</span>
+						<input type="checkbox" name="Lang">
+						<span>Telugu</span>
+						<input type="checkbox" name="Lang">
+			     	</div>
+                
+			</div>
+			<div class="small-block">
+				
+					<div class="top-border-block">Address</div>
+					
+					<div class="column1" style="top: 33%;color: white;">
+
+						<label for="Hno">H.No.</label>
+						<input type="text" name="Hno">
+                    </div>
+                    <div class="column1" style="top: 37%;color: white;">
+						<label for="country" >Country</label>
+						<select name="country">
+							<option>India</option>
+							<option>Australia</option>
+							<option>England</option>
+							<option>Egypt</option>
+						</select>
+					</div>
+					<div class="column1" style="top: 42%;color: white;">
+						<label for="state">State</label>
+						<select name="state">
+							<option>Madhya Pradesh</option>
+							<option>Gujrat</option>
+							<option>Bihar</option>
+							<option>Uttar Pradesh</option>
+						</select>
+					</div>
+
+					<div class="column1" style="top: 47%;color: white;">
+						<label for="pincode">Pincode</label>
+						<input type="text" name="pincode"/>
+					</div>
+				
+					
+			</div>
+			<div class="small-block">
+				<div class="top-border-block">About Yourself</div>
+				<div class="column1" style="top: 28%;color: white;">
+					<label for="hobbies">Hobbies:</label>
+					<input type="text" name="hobbies"/>
+				</div>
+				<div class="column1" style="top: 33%;color: white;">
+					<label for="aboutYou">About You:</label>
+					<input type="text" name="aboutYou"/>
+				</div>
+				<div class="column1" style="top: 44%;">
+				<button>Submit</button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	</form>
+	
+</body>
+</html>
